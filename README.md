@@ -17,9 +17,9 @@ Channels
 
 __Index__
 
-- [Get Authorized Channel Data](#Get Authorized Channel Data)
-- [Get Public Channel Data](#Get Public Channel Data)
-- [Set Game/Title of Stream](#Set Game/Title of Stream)
+- [Get Authorized Channel Data](#get-authorized-channel-data)
+- [Get Public Channel Data](#get-public-channel-data)
+- [Set Game/Title of Stream](#set-gametitle-of-stream)
 
 Get Authorized Channel Data
 ---
