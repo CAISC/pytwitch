@@ -1,29 +1,32 @@
 #!/usr/bin/env python
 
-from distutils.core import setup
-import pytwitch
-
-# Get the long description from the relevant file
-with open('DESCRIPTION.rst') as f:
-    long_description = f.read()
+from setuptools import setup, find_packages
 
 setup(
     name='pytwitch',
-    version=pytwitch.__version__,
+    version='0.0.2',
     description='PyTwitch - Twitch Integration for Python',
-    long_description=long_description,
-    url='https://github.com/dhh-hss/pytwitch',
+    long_description=open('DESCRIPTION.rst').read(),
     author='Daniel Hyldebrandt Hemmingsen',
-    author_email='daniel.h.Hemmingsen@gmail.com',
+    author_email='daniel.h.hemmingsen@gmail.com',
+    url='https://github.com/dhh-hss/pytwitch',
+    keywords=[
+        'twitch',
+        'api',
+        'development',
+        'authentication'
+    ],
+    install_requires=[
+        'requests==2.4.0'
+    ],
+    packages=find_packages(),
     license='MIT',
     classifiers=[
         'Development Status :: 1 - Planning',
         'Intended Audience :: Developers',
-        'Topic :: Software Development :: Build Tools',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.4',
+        'Topic :: Software Development :: Build Tools',
     ],
-    keywords=['twitch', 'api', 'development', 'authentication'],
-    packages=['pytwitch'],
-    install_requires=['requests']
+    zip_safe=False,
 )
