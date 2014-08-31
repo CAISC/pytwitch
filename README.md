@@ -6,7 +6,7 @@ No stable realease yet, however, I'll document my progress here. Until a stable 
 Install
 ===
 
-You can't install pytwitch yet, this is just the documentation for it!
+You can install pytwitch with pip. Just remember it's __far from done yet__. So there isn't much you can do with it... yet!
 
 ```bash
 pip install pytwitch
