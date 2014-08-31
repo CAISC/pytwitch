@@ -144,12 +144,12 @@ Success
     "_links": {
         "chat": "https://api.twitch.tv/kraken/chat/test_user1",
         ...
-        "videos": "https://api.twitch.tv/kraken/channels/dhhtv/test_user1"
+        "videos": "https://api.twitch.tv/kraken/channels/test_user1"
     },
     "background": null,
     "game": "Game",
     ...
     "status": "Custom Title",
-    "video_banner": "http://static-cdn.jtvnw.net/jtv_user_pictures/dhhtv-channel_offline_image-c7687423fa9f7b40-640x360.jpeg"
+    "video_banner": "http://static-cdn.jtvnw.net/jtv_user_pictures/test_user1-channel_offline_image-c7687423fa9f7b40-640x360.jpeg"
 }
 ```
