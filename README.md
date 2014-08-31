@@ -129,7 +129,7 @@ It requires the __channel_editor__ scope!
 If __token__ isn't set, it will return with a error:
 
 ```
-'Error: Access token (token) wasn\'t set.'
+Error: Access token (token) wasn't set.
 ```
 
 If __status__ isn't set or __game__ (or both) isn't set in the call, those __won't be changed__.
