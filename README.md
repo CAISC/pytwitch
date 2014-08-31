@@ -1,5 +1,5 @@
 PyTwitch 0.0.2
-===
+==============
 
 PyTwitch makes it easy to integrate Twitch into your own project.
 You're always welcome to make this even better. By forking the project!
