@@ -34,7 +34,9 @@ parsed = pytwitch.Channels().get(token=token)
 print(json.dumps(parsed, indent=4, sort_keys=True))
 ```
 
-By giving an __access token__, you can get __authorized channel__ data. It requires the __channel_read__ scope. You __stream_key__ will also be available.
+By giving an __access token__, you can get __authorized channel__ data.
+It requires the __channel_read__ scope!
+Your __stream_key__ will also be available.
 
 Success
 ---
@@ -44,11 +46,11 @@ Success
     "_id": 22747064,
     "_links": {
         "chat": "https://api.twitch.tv/kraken/chat/test_user1",
-        # ... (truncated for easy reading)
+        ...
         "videos": "https://api.twitch.tv/kraken/channels/test_user1/videos"
     },
     "abuse_reported": null,
-    # ... (truncated for easy reading)
+    ...
     "views": 356
 }
 ```
@@ -77,7 +79,7 @@ parsed = pytwitch.Channels().get(channel='test_user1')
 print(json.dumps(parsed, indent=4, sort_keys=True))
 ```
 
-By giving an __channel name__, you can get __public avaialble channel__ data. It requires the no __access token__!
+By giving an __channel='name'__, you can get __public available channel__ data.
 
 Success
 ---
@@ -87,11 +89,11 @@ Success
     "_id": 22747064,
     "_links": {
         "chat": "https://api.twitch.tv/kraken/chat/test_user1",
-        # ... (truncated for easy reading)
+        ...
         "videos": "https://api.twitch.tv/kraken/channels/test_user1/videos"
     },
     "abuse_reported": null,
-    # ... (truncated for easy reading)
+    ...
     "views": 52
 }
 ```
