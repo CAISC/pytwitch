@@ -1,6 +1,5 @@
 PyTwitch 0.0.2
 ==============
 
-See GitHub for more information and documentation:
-
-https://github.com/dhh-hss/pytwitch
+Contribute? Fork on GitHub! https://github.com/dhh-hss/pytwitch
+Documentation? Here you go! http://pytwitch.readthedocs.org
