@@ -1,4 +1,4 @@
-PyTwitch 0.0.1
+PyTwitch 0.0.2
 ===
 
 No stable realease yet, however, I'll document my progress here. Until a stable release is ready.

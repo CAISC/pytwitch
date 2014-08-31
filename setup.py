@@ -1,11 +1,7 @@
 #!/usr/bin/env python
 
+from distutils.core import setup
 import pytwitch
-
-packages = ['pytwitch']
-requires = ['requests']
-
-here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the relevant file
 with open('DESCRIPTION.rst') as f:
@@ -20,16 +16,14 @@ setup(
     author='Daniel Hyldebrandt Hemmingsen',
     author_email='daniel.h.Hemmingsen@gmail.com',
     license='MIT',
-    classifiers=(
+    classifiers=[
         'Development Status :: 1 - Planning',
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Build Tools',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.4',
-    ),
-    keywords='twitch api development authentication',
-    packages=packages,
-    install_requires=requires,
-    package_data=None,
-    package_dir={'pytwitch': 'pytwitch'},
+    ],
+    keywords=['twitch', 'api', 'development', 'authentication'],
+    packages=['pytwitch'],
+    install_requires=['requests']
 )
