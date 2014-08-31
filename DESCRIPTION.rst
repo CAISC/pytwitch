@@ -1,4 +1,6 @@
-PyTwitch 0.0.1
+PyTwitch 0.0.2
 ==============
 
-This is the description file for the project.
+See GitHub for more information:
+
+https://github.com/dhh-hss/pytwitch
