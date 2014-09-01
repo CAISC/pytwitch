@@ -3,8 +3,8 @@ Channels
 
 When it comes to channel data, like getting your stream key, game title and stream title. (Or even update them.) This is the main functions. The order of the arguments given doesn't matter. Replace .get/.set(arguments) with own arguments.
 
-get_channel()
--------------
+get_channel() example
+---------------------
 
 .. note::
 	You can read more about scopes in the Twitch API v2 documentation, which you can find at https://github.com/justintv/Twitch-AP
@@ -42,8 +42,8 @@ If you use the editors argument, it will instead return all the users that have 
 
 ``editors=True``
 
-set_channel()
--------------
+set_channel() example
+---------------------
 
 With the set function, you can set the title of your stream and/or the game title of your stream.
 

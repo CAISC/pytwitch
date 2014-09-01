@@ -1,5 +1,5 @@
-PyTwitch Documentation
-======================
+PyTwitch Documentation 0.0.3
+============================
 
 PyTwitch makes it easy to integrate Twitch into your own application.
 The project is still under heavy development as of now, so only a limited functionality.
