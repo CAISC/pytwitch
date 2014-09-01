@@ -45,7 +45,7 @@ class Channels():
 			payload['channel']['status'] = data['status']
 			payload['channel']['game'] = data['game']
 		else:
-			return 'Error: Access token (token) wasn\'t set.'
+			return 'Error: $Access token (token) wasn\'t set.'
 		if kwargs.get('status'):
 			'''Set the channels title/status'''
 			payload['channel']['status'] = kwargs.get('status')
