@@ -6,6 +6,8 @@ When it comes to channel data, like getting your stream_key and game title and s
 Get channel data
 ----------------
 
+::
+
 	import pytwitch # pytwitch package
 	import json # only used for pretty printing
 
@@ -18,11 +20,11 @@ Get channel data
 
 If you provide an access token, it will get the access token's provided JSON object. In other words, the owner of the access token. Information like the stream key is also obtained this way.
 
-	token=access_token
+    token=access_token
 
 If you instead want to get a channels data by providing the channel='name', you will get all the public data avaiable for that channel.
 
-	channel='test_user1
+    channel='test_user1
 
 Only one of the arguments (token or channel) can be provided at a given time.
 
@@ -31,6 +33,8 @@ Set channel data
 
 With the set function, you can set the title of your stream and/or the game title of your stream.
 This requires authentication aka. access_token to work.
+
+::
 
 	import pytwitch # pytwitch package
 	import json # only used for pretty printing
@@ -43,12 +47,12 @@ This requires authentication aka. access_token to work.
 
 The access token to authenticate (required)
 
-	token=access_token (token='string')
+    token=access_token (token='string')
 
 Set the stream title
 
-	status='My awesome new Stream Title'
+    status='My awesome new Stream Title'
 
 Set the game title
 
-	game='Hearthstone: Heroes of Warcraft'
+    game='Hearthstone: Heroes of Warcraft'
