@@ -6,7 +6,7 @@ The project is still under heavy development as of now, so only a limited functi
 Want to help? Fork the GitHub repository today at https://github.com/dhh-hss/pytwitch
 
 Structure
-^^^^^^^^^
+---------
 
 The structure used in this project, is heavily reflected on the actual Twitch API (v2) documentations
 to easier understand the workflow that the Twitch API (v2) provides.
@@ -14,14 +14,14 @@ to easier understand the workflow that the Twitch API (v2) provides.
 You can see the Twitch API v2 here: https://github.com/justintv/twitch-api
 
 Install
-^^^^^^^
+-------
 
 	pip install pytwitch
 
 This will also install requests. Requests is a python package for easier HTTP requests. You can read more at http://requests.readthedocs.org/
 
-Contents:
-^^^^^^^^^
+Contents
+--------
 
 .. toctree::
    :maxdepth: 3
