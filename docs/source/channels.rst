@@ -3,56 +3,76 @@ Channels
 
 When it comes to channel data, like getting your stream key, game title and stream title. (Or even update them.) This is the main functions. The order of the arguments given doesn't matter. Replace .get/.set(arguments) with own arguments.
 
-Get channel data
-----------------
+get_channel()
+-------------
+
+.. note::
+	You can read more about scopes in the Twitch API v2 documentation, which you can find at https://github.com/justintv/Twitch-AP
 
 ::
 
 	import pytwitch # pytwitch package
 	import json # only used for pretty printing
 
-	access_token = 'Your Access Token'
+	token = 'Your OAuth Token Key'
 
-	# Will return an error, no arguments given
-	parsed = pytwitch.Channels().get(arguments)
+	# Will return an error, if no arguments given
+	json = pytwitch.channels.get_channel(oauth=token, name='channel name', editors=True/False)
 	# Use json.dumps for pretty printing
-	print(json.dumps(parsed, indent=4, sort_keys=True))
+	print(json.dumps(json, indent=4, sort_keys=True))
 
-If you provide an access token, it will get the access token's provided JSON object. In other words, the owner of the access token. Information like the stream key is also obtained this way.
+get_channel() arguments
+-----------------------
 
-    ``token=access_token``
+If you provide an oauth access token, it will get you authorized channel object back.
 
-If you instead want to get a channels data by providing the channel='name', you will get all the public data avaiable for that channel.
+.. warning::
+	This method will not do anything with the ``name`` argument, channel_read scope is needed.
 
-    ``channel='test_user1'``
+	``oauth='your access token'``
 
-Only one of the arguments (token or channel) can be provided at a given time.
+If you provide a name. It will get you the public channel object back.
 
-Set channel data
-----------------
+	``name='test_user1'``
+
+If you use the editors argument, it will instead return all the users that have editor permission on the channel.
+
+.. warning::
+	This argument requires the channel_read scope and therefor a oauth key, see the oauth argument section above
+
+	``editors=True``
+
+set_channel()
+-------------
 
 With the set function, you can set the title of your stream and/or the game title of your stream.
-This requires authentication aka. access_token to work.
+
+.. warning::
+	OAuth token is required for the set_channel function
 
 ::
 
 	import pytwitch # pytwitch package
 	import json # only used for pretty printing
 
-	access_token = 'Your Access Token'
+	token = 'Your OAuth Token Key'
+
 	# Will return an error, no arguments given
-	parsed = pytwitch.Channels().set(arguments)
+	parsed = pytwitch.channels.set(oauth=token, title='My awesome Stream Title', game='Game Title')
 	# Use json.dumps for pretty printing the JSON object you receive back
 	print(json.dumps(parsed, indent=4, sort_keys=True))
 
-The access token to authenticate (required)
+set_channel() arguments
+-----------------------
 
-    ``token=access_token (token='string')``
+Set the oauth token.
 
-Set the stream title
+	``oauth='your access token'``
 
-    ``status='My awesome new Stream Title'``
+Set the stream title.
 
-Set the game title
+	``title='My awesome new Stream Title'``
 
-    ``game='Hearthstone: Heroes of Warcraft'``
+Set the game title.
+
+	``game='Game Title'``

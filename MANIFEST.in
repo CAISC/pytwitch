@@ -1,2 +1,2 @@
-exclude docs
-include *.rst
+exclude docs test*
+include LICENSE *.rst
