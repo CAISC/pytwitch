@@ -17,9 +17,9 @@ get_channel() example
 	token = 'Your OAuth Token Key'
 
 	# Will return an error, if no arguments given
-	json = pytwitch.channels.get_channel(oauth=token, name='channel name', editors=True/False)
+	data = pytwitch.channels.get_channel(oauth=token, name='channel name', editors=True/False)
 	# Use json.dumps for pretty printing
-	print(json.dumps(json, indent=4, sort_keys=True))
+	print(json.dumps(data, indent=4, sort_keys=True))
 
 get_channel() arguments
 -----------------------
@@ -58,9 +58,9 @@ With the set function, you can set the title of your stream and/or the game titl
 	token = 'Your OAuth Token Key'
 
 	# Will return an error, no arguments given
-	parsed = pytwitch.channels.set(oauth=token, title='My awesome Stream Title', game='Game Title')
+	data = pytwitch.channels.set(oauth=token, title='My awesome Stream Title', game='Game Title')
 	# Use json.dumps for pretty printing the JSON object you receive back
-	print(json.dumps(parsed, indent=4, sort_keys=True))
+	print(json.dumps(data, indent=4, sort_keys=True))
 
 set_channel() arguments
 -----------------------
