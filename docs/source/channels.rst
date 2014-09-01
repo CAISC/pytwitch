@@ -29,18 +29,18 @@ If you provide an oauth access token, it will get you authorized channel object 
 .. warning::
 	This method will not do anything with the ``name`` argument, channel_read scope is needed.
 
-	``oauth='your access token'``
+``oauth='your access token'``
 
 If you provide a name. It will get you the public channel object back.
 
-	``name='test_user1'``
+``name='test_user1'``
 
 If you use the editors argument, it will instead return all the users that have editor permission on the channel.
 
 .. warning::
 	This argument requires the channel_read scope and therefor a oauth key, see the oauth argument section above
 
-	``editors=True``
+``editors=True``
 
 set_channel()
 -------------
@@ -67,12 +67,12 @@ set_channel() arguments
 
 Set the oauth token.
 
-	``oauth='your access token'``
+``oauth='your access token'``
 
 Set the stream title.
 
-	``title='My awesome new Stream Title'``
+``title='My awesome new Stream Title'``
 
 Set the game title.
 
-	``game='Game Title'``
+``game='Game Title'``
