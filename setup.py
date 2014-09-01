@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pytwitch',
-    version='0.0.2',
+    version='0.0.3',
     description='PyTwitch - Twitch Integration for Python',
     long_description=open('DESCRIPTION.rst').read(),
     author='Daniel Hyldebrandt Hemmingsen',
