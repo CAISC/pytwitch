@@ -1,7 +1,7 @@
 Channels
 ========
 
-When it comes to channel data, like getting your stream_key and game title and stream title. (Or even update them.) This is the main functions. The order of the arguments given doesn't matter. Replace .get/.set(arguments) with own arguments.
+When it comes to channel data, like getting your stream key, game title and stream title. (Or even update them.) This is the main functions. The order of the arguments given doesn't matter. Replace .get/.set(arguments) with own arguments.
 
 Get channel data
 ----------------
