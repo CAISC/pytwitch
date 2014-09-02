@@ -1,8 +1,17 @@
+##################
 PyTwitch |version|
-==================
+##################
+
+Introduction
+============
 
 PyTwitch makes it easy to integrate Twitch into your own project.
-You're always welcome to make this even better. By forking the project!
+
+Contribute
+==========
+
+Do you want to make this even better? Don't hesitate to fork the project at `GitHub <https://github.com/dhh-hss/pytwitch>`_!
+
 
 .. image:: https://travis-ci.org/dhh-hss/pytwitch.svg?branch=master
     :target: https://travis-ci.org/dhh-hss/pytwitch
