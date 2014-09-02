@@ -1,5 +1,5 @@
-PyTwitch Documentation (0.0.4)
-==============================
+PyTwitch Documentation |version_pypi|
+=====================================
 
 *PyTwitch* makes it easy to integrate *Twitch API (v2)* into your own project.
 
@@ -41,3 +41,7 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+.. |version_pypi| image:: https://pypip.in/version/pytwitch/badge.png
+    :target: https://pypi.python.org/pypi/pytwitch
+    :alt: Latest Version
