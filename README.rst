@@ -1,36 +1,33 @@
-PyTwitch |version|_
-###################
+PyTwitch |version|
+==================
 
 PyTwitch makes it easy to integrate Twitch into your own project.
 You're always welcome to make this even better. By forking the project!
 
-|build|_ |docs|_ |github|_ |license| |status|_ |support|_
-
-.. |build| image:: https://travis-ci.org/dhh-hss/pytwitch.svg?branch=master
+.. image:: https://travis-ci.org/dhh-hss/pytwitch.svg?branch=master
+    :target: https://travis-ci.org/dhh-hss/pytwitch
     :alt: Build Status
 
-.. |docs| image:: https://readthedocs.org/projects/pytwitch/badge/?version=latest
+.. image:: https://readthedocs.org/projects/pytwitch/badge/?version=latest
+    :target: https://pytwitch.readthedocs.org
     :alt: Documentation
 
-.. |github| image:: https://img.shields.io/badge/github-source-blue.png
+.. image:: https://img.shields.io/badge/github-source-blue.png
+    :target: https://github.com/dhh-hss/pytwitch
     :alt: Github Source
 
-.. |license| image:: https://pypip.in/license/pytwitch/badge.png
+.. image:: https://pypip.in/license/pytwitch/badge.png
+    :target: https://github.com/dhh-hss/pytwitch/blob/master/LICENSE
     :alt: License
 
-.. |status| image:: https://pypip.in/status/pytwitch/badge.png
+.. image:: https://pypip.in/status/pytwitch/badge.png
+    :target: https://pypi.python.org/pypi/pytwitch
     :alt: Development Status
 
-.. |support| image:: https://pypip.in/py_versions/pytwitch/badge.png
+.. image:: https://pypip.in/py_versions/pytwitch/badge.png
+    :target: https://pypi.python.org/pypi/pytwitch
     :alt: Supported Python versions
 
 .. |version| image:: https://pypip.in/version/pytwitch/badge.png
+    :target: https://pypi.python.org/pypi/pytwitch
     :alt: Latest Version
-
-.. _version: https://pypi.python.org/pypi/pytwitch
-.. _status: https://pypi.python.org/pypi/pytwitch
-.. _support: https://pypi.python.org/pypi/pytwitch
-.. _license: https://github.com/dhh-hss/pytwitch/blob/master/LICENSE
-.. _github: https://github.com/dhh-hss/pytwitch
-.. _docs: https://pytwitch.readthedocs.org
-.. _build: https://travis-ci.org/dhh-hss/pytwitch
