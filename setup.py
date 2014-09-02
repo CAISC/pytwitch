@@ -2,36 +2,22 @@
 
 from setuptools import setup, find_packages
 
+project = {}
+with open('pytwitch/__project__.py') as fp:
+    exec(fp.read(), project)
+
 setup(
-    name='pytwitch',
-    version='0.0.3',
-    description='PyTwitch - Twitch Integration for Python',
-    long_description=open('DESCRIPTION.rst').read(),
-    author='Daniel Hyldebrandt Hemmingsen',
-    author_email='daniel.h.hemmingsen@gmail.com',
-    url='https://github.com/dhh-hss/pytwitch',
-    keywords=[
-        'twitch',
-        'api',
-        'development',
-        'authentication'
-    ],
-    install_requires=[
-        'requests>=2.4.0'
-    ],
+    name=project['__name__'],
+    version=project['__version__'],
+    description=project['__description__'],
+    long_description=open('README.rst').read(),
+    author=project['__author__'],
+    author_email=project['__author_email__'],
+    url=project['__author_email__'],
+    keywords=project['__keywords__'],
+    install_requires=project['__install_requires__'],
     packages=find_packages(),
     license='MIT',
     zip_safe=False,
-    classifiers=[
-        'Development Status :: 1 - Planning',
-        'Intended Audience :: Developers',
-        'Natural Language :: English',
-        'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
-        'Topic :: Software Development :: Build Tools',
-    ],
+    classifiers=project['__classifiers__'],
 )

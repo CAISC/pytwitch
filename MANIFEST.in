@@ -1,2 +1,2 @@
-exclude docs test*
 include LICENSE *.rst
+prune docs test*
