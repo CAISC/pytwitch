@@ -11,7 +11,7 @@ With the **get_tips()** function, you can retrieve tips (donations) with a **cli
 .. note::
 	You can find your *client_id* and *access_token* by logging into http://streamtip.com and go to your *account*. (https://streamtip.com/account/billing)
 
-.. warning::
+.. danger::
 	(Taken from the StreamTip API documentation)
 
 	``Do not place calls to these APIs on a publicly accessible website!``
