@@ -15,11 +15,7 @@ You're always welcome to make this even better. By forking the project!
 .. image:: https://img.shields.io/badge/GitHub-Fork-blue.svg
 	:target: https://github.com/dhh-hss/pytwitch
 	:alt: Fork the PyTwitch Project
-
-.. image:: https://pypip.in/license/pytwitch/badge.svg
-    :target: https://pypi.python.org/pypi/pytwitch/
-    :alt: License
-
+|
 .. image:: https://pypip.in/license/pytwitch/badge.svg
     :target: https://pypi.python.org/pypi/pytwitch/
     :alt: License
