@@ -7,7 +7,7 @@ __author_email__     = 'daniel.h.hemmingsen@gmail.com'
 __uri__              = 'https://github.com/dhh-hss/pytwitch'
 
 __keywords__         = ['twitch','api','development']
-__install_requires__ = ['requests>2.4.0']
+__install_requires__ = ['requests>=2.4.0']
 __classifiers__      = ['Development Status :: 1 - Planning',
     'Intended Audience :: Developers',
     'Natural Language :: English',
