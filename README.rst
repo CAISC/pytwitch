@@ -1,4 +1,4 @@
-PyTwitch 0.0.4
+PyTwitch 0.0.5
 ==============
 
 PyTwitch makes it easy to integrate Twitch into your own project.
