@@ -15,3 +15,6 @@ You're always welcome to make this even better. By forking the project!
 .. image:: http://img.shields.io/badge/GitHub-Fork-blue.png
 	:target: https://github.com/dhh-hss/pytwitch
 	:alt: Fork the PyTwitch Project
+
+.. image:: http://img.shields.io/badge/Python-3.2%3E-yellow.png
+	:alt: Supports Python Version 3.2>
