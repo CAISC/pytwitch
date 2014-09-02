@@ -6,12 +6,12 @@ You're always welcome to make this even better. By forking the project!
 
 .. image:: https://travis-ci.org/dhh-hss/pytwitch.svg?branch=master
     :target: https://travis-ci.org/dhh-hss/pytwitch
-    :alt: Buld Status
+    :alt: Build Status
 
 .. image:: https://readthedocs.org/projects/pytwitch/badge/?version=latest
 	:target: https://readthedocs.org/projects/pytwitch/?badge=latest
 	:alt: Documentation Status
 
-.. image:: http://img.shields.io/badge/GitHub-Fork-blue.svg
+.. image:: http://img.shields.io/badge/GitHub-Fork-blue.png
 	:target: https://github.com/dhh-hss/pytwitch
 	:alt: Fork the PyTwitch Project
