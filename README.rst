@@ -23,7 +23,9 @@ You're always welcome to make this even better. By forking the project!
 .. image:: https://pypip.in/py_versions/pytwitch/badge.svg
     :target: https://pypi.python.org/pypi/pytwitch/
     :alt: Supported Python versions
+
 |
+
 .. image:: https://travis-ci.org/dhh-hss/pytwitch.svg?branch=master
     :target: https://travis-ci.org/dhh-hss/pytwitch
     :alt: Build Status
