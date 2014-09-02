@@ -12,17 +12,13 @@ You're always welcome to make this even better. By forking the project!
     :target: https://readthedocs.org/projects/pytwitch/?badge=latest
     :alt: Documentation Status
 
-.. image:: https://img.shields.io/badge/GitHub-Fork-blue.svg
+.. image:: https://img.shields.io/badge/github-source-blue.svg
     :target: https://github.com/dhh-hss/pytwitch
     :alt: Fork the PyTwitch Project
 
 .. image:: https://pypip.in/license/pytwitch/badge.svg
-    :target: https://pypi.python.org/pypi/pytwitch/
+    :target: https://github.com/dhh-hss/pytwitch/blob/master/LICENSE
     :alt: License
-
-.. image:: https://pypip.in/format/pytwitch/badge.svg
-    :target: https://pypi.python.org/pypi/pytwitch/
-    :alt: Download format
 
 .. image:: https://pypip.in/status/pytwitch/badge.svg
     :target: https://pypi.python.org/pypi/pytwitch/
