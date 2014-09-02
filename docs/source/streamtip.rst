@@ -23,7 +23,7 @@ With the **get_tips()** function, you can retrieve tips (donations) with a **cli
 	import pytwitch
 
 	data = pytwitch.streamtip.get_tips(client_id='', access_token='')
-	print(json.dumps(data, indent=4, sort_keys=True)+'\n')
+	print(json.dumps(data, indent=4, sort_keys=True))
 
 The direction results are returned. (**asc** or **desc**, default value is **asc**)
 
