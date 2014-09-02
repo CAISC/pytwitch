@@ -12,18 +12,18 @@ You're always welcome to make this even better. By forking the project!
     :target: https://pytwitch.readthedocs.org
     :alt: Documentation Status
 
-.. image:: https://img.shields.io/badge/github-source-blue.svg
-    :target: https://github.com/dhh-hss/pytwitch
+.. image:: https://img.shields.io/badge/github-source-blue.png
+    :target: https://github.com/dhh-hss/pytwitch/
     :alt: Fork the PyTwitch Project
 
-.. image:: https://pypip.in/license/pytwitch/badge.svg
+.. image:: https://pypip.in/license/pytwitch/badge.png
     :target: https://github.com/dhh-hss/pytwitch/blob/master/LICENSE
     :alt: License
 
-.. image:: https://pypip.in/status/pytwitch/badge.svg
+.. image:: https://pypip.in/status/pytwitch/badge.png
     :target: https://pypi.python.org/pypi/pytwitch
     :alt: Development Status
 
-.. image:: https://pypip.in/py_versions/pytwitch/badge.svg
+.. image:: https://pypip.in/py_versions/pytwitch/badge.png
     :target: https://pypi.python.org/pypi/pytwitch
     :alt: Supported Python versions
