@@ -1,78 +1,95 @@
 Channels
 ========
 
-When it comes to channel data, like getting your stream key, game title and stream title. (Or even update them.) This is the main functions. The order of the arguments given doesn't matter. Replace .get/.set(arguments) with own arguments.
+When it comes to channel data, like getting your stream key, game title and stream title. (Or even update them.) The order of the arguments doesn't matter.
 
-get_channel() example
----------------------
+get_channel()
+-------------
+
+With the **get_channel()** function, you can get the channel oject.
 
 .. note::
-	You can read more about scopes in the Twitch API v2 documentation, which you can find at https://github.com/justintv/Twitch-AP
+	You can read more about **scopes** and how to obtain an **OAuth token** in the *Twitch API (v2) documentation*.
+
+	You can find the documentation here: https://github.com/justintv/Twitch-API
 
 ::
 
 	import pytwitch # pytwitch package
 	import json # only used for pretty printing
 
-	token = 'Your OAuth Token Key'
-
-	# Will return an error, if no arguments given
-	data = pytwitch.channels.get_channel(oauth=token, name='channel name', editors=True/False)
-	# Use json.dumps for pretty printing
+	data = pytwitch.channels.get_channel(oauth='', name='')
+	# Use json.dumps for pretty printing the response
 	print(json.dumps(data, indent=4, sort_keys=True))
 
-get_channel() arguments
------------------------
-
-If you provide an oauth access token, it will get you authorized channel object back.
-
 .. warning::
-	This method will not do anything with the ``name`` argument, channel_read scope is needed.
+	You **can't** use both *oauth and name arguments* at the same time
 
-``oauth='your access token'``
+	*required scope:* ``channel_read`` (only **oauth**)
+
+If you provide an oauth access token, it will get you the authorized channel object back.
+
+``oauth=''``
 
 If you provide a name. It will get you the public channel object back.
 
-``name='test_user1'``
+``name=''``
 
-If you use the editors argument, it will instead return all the users that have editor permission on the channel.
-
-.. warning::
-	This argument requires the channel_read scope and therefor a oauth key, see the oauth argument section above
-
-``editors=True``
-
-set_channel() example
+set_channel()
 ---------------------
 
-With the set function, you can set the title of your stream and/or the game title of your stream.
+With the **set_channel()** function, you can set the title of your stream and/or the game title of your stream.
 
 .. warning::
-	OAuth token is required for the set_channel function
+	**OAuth token is required** for the *set_channel()* function
+
+	*required scope:* ``channel_editor``
 
 ::
 
 	import pytwitch # pytwitch package
 	import json # only used for pretty printing
 
-	token = 'Your OAuth Token Key'
-
-	# Will return an error, no arguments given
-	data = pytwitch.channels.set(oauth=token, title='My awesome Stream Title', game='Game Title')
+	data = pytwitch.channels.set(oauth='', title='', game='')
 	# Use json.dumps for pretty printing the JSON object you receive back
 	print(json.dumps(data, indent=4, sort_keys=True))
 
-set_channel() arguments
------------------------
-
 Set the oauth token.
 
-``oauth='your access token'``
+``oauth=''``
+
+.. note::
+	You arent *required* to use *both title and game argument*.
+
+	Example: You only want to *update* the **title of the stream**. You simply only apply *oauth and title*.
 
 Set the stream title.
 
-``title='My awesome new Stream Title'``
+``title=''``
 
 Set the game title.
 
-``game='Game Title'``
+``game=''``
+
+get_editors()
+-------------
+
+With the **get_editors()**, you can return all the editors of a channel
+
+.. warning::
+	**OAuth token is required** for the *get_editors()* function
+
+	*required scope:* ``channel_read``
+
+::
+
+	import pytwitch # pytwitch package
+	import json # only used for pretty printing
+
+	data = pytwitch.channels.get_editors(oauth='')
+	# Use json.dumps for pretty printing the JSON object you receive back
+	print(json.dumps(data, indent=4, sort_keys=True))
+
+Set the oauth token.
+
+``oauth=''``
