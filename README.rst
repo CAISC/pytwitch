@@ -9,7 +9,7 @@ You're always welcome to make this even better. By forking the project!
     :alt: Build Status
 
 .. image:: https://readthedocs.org/projects/pytwitch/badge/?version=latest
-    :target: https://readthedocs.org/projects/pytwitch/?badge=latest
+    :target: https://pytwitch.readthedocs.org
     :alt: Documentation Status
 
 .. image:: https://img.shields.io/badge/github-source-blue.svg
@@ -21,9 +21,9 @@ You're always welcome to make this even better. By forking the project!
     :alt: License
 
 .. image:: https://pypip.in/status/pytwitch/badge.svg
-    :target: https://pypi.python.org/pypi/pytwitch/
+    :target: https://pypi.python.org/pypi/pytwitch
     :alt: Development Status
 
 .. image:: https://pypip.in/py_versions/pytwitch/badge.svg
-    :target: https://pypi.python.org/pypi/pytwitch/
+    :target: https://pypi.python.org/pypi/pytwitch
     :alt: Supported Python versions
