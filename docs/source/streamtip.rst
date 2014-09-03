@@ -5,6 +5,7 @@ StreamTip
 |  You can learn more about the *StreamTip* API at (http://streamtip.com)
 |  (You **have** to be **logged in** to see the *API documentation*.)
 
+
 get_tips()
 -------------
 
@@ -14,12 +15,16 @@ With the **get_tips()** function, you can retrieve tips (donations) with a **cli
 	|  You can find your **client_id** and **access_token** by logging into http://streamtip.com
 	|  and go to your *account*. (https://streamtip.com/account/billing)
 
+
 .. danger::
-	(Taken from the *StreamTip API* documentation)
+	|  (Taken from the *StreamTip API* documentation)
+	|
+	|  ``Do not place calls to these APIs on a publicly accessible website!``
+	|
+	|  Your ``client_id`` and ``access_token`` must remain confidential to ensure the security of your account. 
+	|  **An opt-in, publicly accessible solution with more limited data (personal info removed) will be coming
+	|  sometime in the future for those who need it.**
 
-	``Do not place calls to these APIs on a publicly accessible website!``
-
-	Your ``client_id`` and ``access_token`` must remain confidential to ensure the security of your account. **An opt-in, publicly accessible solution with more limited data (personal info removed) will be coming sometime in the future for those who need it.**
 
 ::
 

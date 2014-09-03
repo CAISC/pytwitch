@@ -4,6 +4,7 @@ Channels
 |  When it comes to channel data, like getting your **stream key**, **game** and channel **title**.
 |  (Or even update them.) The **order** of the **arguments given**, does **NOT** matter.
 
+
 get_channel()
 -------------
 
@@ -12,6 +13,7 @@ With the **get_channel()** function, you can get the channel oject.
 .. note::
 	|  You can read more about **scopes** and how to obtain an **OAuth token** in the *Twitch API (v2) documentation*.
 	|  You can find the documentation here: https://github.com/justintv/Twitch-API
+
 
 ::
 
@@ -27,6 +29,7 @@ With the **get_channel()** function, you can get the channel oject.
 	|  You **can't** use both *OAuth and name arguments* at the same time.
 	|  *required scope(s):* ``channel_read`` (only for **OAuth** call.)
 
+
 If you provide an oauth access token, it will get you the authorized channel object back.
 
 ``oauth=''``
@@ -41,9 +44,11 @@ set_channel()
 |  With the **set_channel()** function, you can set the **title** of your channel
 |  and/or the **game** of your channel.
 
+
 .. warning::
 	|  **OAuth token is required** for the **set_channel()** function.
 	|  *required scope(s):* ``channel_editor``
+
 
 ::
 
@@ -64,6 +69,7 @@ Set the oauth token.
 	|  Example: You only want to **update** the **title** of the stream.
 	|  You simply only provide the **OAuth** argument and the **title** argument.
 
+
 Set the stream title.
 
 ``title=''``
@@ -80,6 +86,7 @@ With the **get_editors()**, you can return all the editors of a channel
 .. warning::
 	|  **OAuth token is required** for the **get_editors()** function.
 	|  *required scope(s):* ``channel_read``
+
 
 ::
 
