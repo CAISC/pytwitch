@@ -10,12 +10,12 @@ PyTwitch Documentation |version_pypi|
 	|  Want to help? Fork the GitHub repository today at https://github.com/dhh-hss/pytwitch
 	|
 
-Support and Badges
-------------------
+Python Support
+--------------
 
-|  As of now **PyTwitch** only support |support|
-|  It might work on prior versions of Python, but not **guaranteed**.
-|  (There are plans to make this officially Python 2.7> compatible in the future.)
+|  As of now **PyTwitch** only supports |support|
+|  It **might** work on *prior versions* of **Python**, but not **guaranteed**.
+|  (*There are plans to make this officially Python 2.7> compatible in the future.*)
 |  
 
 .. |support| image:: https://pypip.in/py_versions/pytwitch/badge.png
