@@ -20,9 +20,12 @@ With the **get_tips()** function, you can retrieve tips (donations) with a **cli
 
 ::
 
-	import pytwitch
+	import pytwitch # Import of PyTwitch
+	import json # Only imported to pretty print retuned JSON string
 
+	# Getting 25 latest tips (default) sorted by date and asc (ascending) order if you only provide required client_id and access_token
 	data = pytwitch.streamtip.get_tips(client_id='', access_token='')
+	# Pretty printing returned JSON object with json.dumps()
 	print(json.dumps(data, indent=4, sort_keys=True))
 
 The direction results are returned. (**asc** or **desc**, default value is **asc**)
