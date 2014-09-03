@@ -1,7 +1,9 @@
 StreamTip
 =========
 
-Easily get you latest tips (donations) through the StreamTip API. (http://streamtip.com)
+|  Easily get you latest tips (donations) through the *StreamTip API*.
+|  You can learn more about the *StreamTip* API at (http://streamtip.com)
+|  (You **have** to be **logged in** to see the *API documentation*.)
 
 get_tips()
 -------------
@@ -9,10 +11,11 @@ get_tips()
 With the **get_tips()** function, you can retrieve tips (donations) with a **client_id** and **access_token**.
 
 .. note::
-	You can find your *client_id* and *access_token* by logging into http://streamtip.com and go to your *account*. (https://streamtip.com/account/billing)
+	|  You can find your **client_id** and **access_token** by logging into http://streamtip.com
+	|  and go to your *account*. (https://streamtip.com/account/billing)
 
 .. danger::
-	(Taken from the StreamTip API documentation)
+	(Taken from the *StreamTip API* documentation)
 
 	``Do not place calls to these APIs on a publicly accessible website!``
 
@@ -20,26 +23,27 @@ With the **get_tips()** function, you can retrieve tips (donations) with a **cli
 
 ::
 
-	import pytwitch # Import of PyTwitch
-	import json # Only imported to pretty print retuned JSON string
+	import pytwitch # Import of PyTwitch.
+	import json # Only imported to pretty print retuned JSON string.
 
-	# Getting 25 latest tips (default) sorted by date and asc (ascending) order if you only provide required client_id and access_token
+	# Getting 25 latest tips (default) sorted by date and in asc (ascending) order.
+	# If you only provide required client_id and access_token.
 	data = pytwitch.streamtip.get_tips(client_id='', access_token='')
-	# Pretty printing returned JSON object with json.dumps()
+	# Pretty printing returned JSON object with json.dumps().
 	print(json.dumps(data, indent=4, sort_keys=True))
 
-The direction results are returned. (**asc** or **desc**, default value is **asc**)
+The direction tips are returned. (**asc** or **desc**, default value is **asc**)
 
 ``direction=''``
 
-The number of items to be returned. (default value is **25**)
+The number of tips to be returned. (default value is **25**)
 
 ``limit=''``
 
-The number of items to skip. (default value is **0**)
+The number of tips to skip. (default value is **0**)
 
 ``offset=''``
 
-The field to sort by. (**date** and **amount** are supported, default value is **date**)
+The field to sort tips by. (**amount** and **date** are supported, default value is **date**)
 
 ``sort_by=''``
