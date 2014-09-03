@@ -19,9 +19,9 @@ With the **get_tips()** function, you can retrieve tips (donations) with a **cli
 .. danger::
 	|  (Taken from the *StreamTip API* documentation)
 	|
-	|  ``Do not place calls to these APIs on a publicly accessible website!``
+	|  **Do not place calls to these APIs on a publicly accessible website!**
 	|
-	|  Your ``client_id`` and ``access_token`` must remain confidential to ensure the security of your account. 
+	|  Your **client_id and access_token** must remain confidential to ensure the security of your account. 
 	|  **An opt-in, publicly accessible solution with more limited data (personal info removed) will be coming
 	|  sometime in the future for those who need it.**
 	|  
@@ -37,18 +37,18 @@ With the **get_tips()** function, you can retrieve tips (donations) with a **cli
 	# Pretty printing returned JSON object with json.dumps().
 	print(json.dumps(data, indent=4, sort_keys=True))
 
-The direction tips are returned. (**asc** or **desc**, default value is **asc**)
+Arguments
+^^^^^^^^^
 
-``direction=''``
+::
+	# The direction tips are returned. (**asc** or **desc**, default value is **asc**)
+	direction=''
 
-The number of tips to be returned. (default value is **25**)
+	# The number of tips to be returned. (default value is **25**)
+	limit=''
 
-``limit=''``
+	# The number of tips to skip. (default value is **0**)
+	offset=''
 
-The number of tips to skip. (default value is **0**)
-
-``offset=''``
-
-The field to sort tips by. (**amount** and **date** are supported, default value is **date**)
-
-``sort_by=''``
+	# The field to sort tips by. (**amount** and **date** are supported, default value is **date**)
+	sort_by=''

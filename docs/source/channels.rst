@@ -16,7 +16,6 @@ With the **get_channel()** function, you can get the channel oject.
 	|  
 
 ::
-
 	import pytwitch # Import of PyTwitch.
 	import json # Only imported to pretty print retuned JSON string.
 
@@ -30,13 +29,15 @@ With the **get_channel()** function, you can get the channel oject.
 	|  *required scope(s):* ``channel_read`` (only for **OAuth** call.)
 	|  
 
-If you provide an oauth access token, it will get you the authorized channel object back.
+Arguments
+^^^^^^^^^
 
-``oauth=''``
+:: 
+	# If you provide an oauth access token, it will get you the authorized channel object back.
+	oauth=''
 
-If you provide a name. It will get you the public channel object back.
-
-``name=''``
+	# If you provide a name. It will get you the public channel object back.
+	name=''
 
 set_channel()
 ---------------------
@@ -51,7 +52,6 @@ set_channel()
 	|  
 
 ::
-
 	import pytwitch # Import of PyTwitch.
 	import json # Only used for pretty printing the returned JSON object.
 
@@ -60,23 +60,24 @@ set_channel()
 	# Pretty printing returned JSON object with json.dumps().
 	print(json.dumps(data, indent=4, sort_keys=True))
 
-Set the oauth token.
-
-``oauth=''``
-
 .. note::
 	|  You arent **required** to use **both** the **title** and **game** argument*.
 	|  Example: You only want to **update** the **title** of the stream.
 	|  You simply only provide the **OAuth** argument and the **title** argument.
 	|  
 
-Set the stream title.
+Arguments
+^^^^^^^^^
 
-``title=''``
+::
+	Set the oauth token.
+	oauth=''
 
-Set the game title.
+	#Set the stream title.
+	title=''
 
-``game=''``
+    #Set the game title.
+	game=''``
 
 get_editors()
 -------------
@@ -89,7 +90,6 @@ With the **get_editors()**, you can return all the editors of a channel
 	|  
 
 ::
-
 	import pytwitch # Import of PyTwitch.
 	import json # Only imported to pretty print retuned JSON string.
 
@@ -98,6 +98,9 @@ With the **get_editors()**, you can return all the editors of a channel
 	# Pretty printing returned JSON object with json.dumps().
 	print(json.dumps(data, indent=4, sort_keys=True))
 
-Set the oauth token.
+Arguments
+^^^^^^^^^
 
-``oauth=''``
+::  
+	Set the oauth token.
+	oauth=''
