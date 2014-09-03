@@ -45,7 +45,8 @@ JSON
 Install
 -------
 
-``pip install pytwitch``
+::
+	pip install pytwitch
 
 .. note::
 	|  This will also **install requests**. **Requests** is an awesome **Python Package**
