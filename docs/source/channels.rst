@@ -15,8 +15,11 @@ With the **get_channel()** function, you can get the channel oject.
 	|  You can find the documentation here: https://github.com/justintv/Twitch-API
 	|  
 
+Example
+^^^^^^^
+
 .. code-block:: python
-	:emphasize-lines: 4,6
+	:emphasize-lines: 5,7
 
 	import pytwitch # Import of PyTwitch.
 	import json # Only imported to pretty print retuned JSON string.
@@ -35,6 +38,7 @@ Arguments
 ^^^^^^^^^
 
 .. code-block:: python
+    :emphasize-lines: 2,5
 
 	# If you provide an oauth access token, it will get you the authorized channel object back.
 	oauth=''
@@ -54,8 +58,11 @@ set_channel()
 	|  *required scope(s):* ``channel_editor``
 	|  
 
+Example
+^^^^^^^
+
 .. code-block :: python
-	:emphasize-lines: 4,6
+	:emphasize-lines: 5,7
 
 	import pytwitch # Import of PyTwitch.
 	import json # Only used for pretty printing the returned JSON object.
@@ -75,6 +82,7 @@ Arguments
 ^^^^^^^^^
 
 .. code-block:: python
+	:emphasize-lines: 2,5,8
 
 	# Set the oauth token.
 	oauth=''
@@ -95,8 +103,11 @@ With the **get_editors()**, you can return all the editors of a channel
 	|  *required scope(s):* ``channel_read``
 	|  
 
+Example
+^^^^^^^
+
 .. code-block :: python
-	:emphasize-lines: 4,6
+	:emphasize-lines: 5,7
 
 	import pytwitch # Import of PyTwitch.
 	import json # Only imported to pretty print retuned JSON string.
@@ -110,6 +121,7 @@ Arguments
 ^^^^^^^^^
 
 .. code-block:: python
-
+	:emphasize-lines: 2
+	
 	# Set the oauth token.
 	oauth=''

@@ -15,32 +15,13 @@ Python Support
 
 |  As of now **PyTwitch** only supports |support|
 |  It **might** work on *prior versions* of **Python**, but not **guaranteed**.
-|  (*There are plans to make this officially Python 2.7> compatible in the future.*)
+|  
+|  (There are plans to make **PyTwitch officially** work with **Python 2.7>** in the future.)
 |  
 
 .. |support| image:: https://pypip.in/py_versions/pytwitch/badge.png
     :target: https://pypi.python.org/pypi/pytwitch
     :alt: Supported Python versions
-
-
-Structure
----------
-
-|  The structure used in this project, is heavily reflected on the actual *Twitch API (v2)* documentations.
-|  You can learn more about the *Twitch API (v2)* here: https://github.com/justintv/twitch-api
-|  
-
-JSON
-----
-
-|  All of the PyTwitch functions, even for error handling returns a JSON object right out of the box.
-|  It's planned that PyTwitch in the future will support more than just a JSON object to be returned.
-|
-|  Status code 404 - Not Found
-|  Status code 401 - Authentication error
-|  Status code 200 - OK
-|  Status code 101 - Fatal Error (function broke, probably not right arguments given)
-|  
 
 Install
 -------
@@ -55,6 +36,41 @@ Install
 	|  You can read more about **requests** at http://requests.readthedocs.org/
 	|  
 
+Structure
+---------
+
+|  The structure used in this project, is heavily reflected on the actual *Twitch API (v2)* documentations.
+|  You can learn more about the *Twitch API (v2)* here: https://github.com/justintv/twitch-api
+|  
+
+JSON Responses?
+---------------
+
+|  All of the PyTwitch functions, even for error handling returns a JSON object right out of the box.
+|  It's planned that PyTwitch in the future will support more than just a JSON object to be returned.
+|  
+
+Example Error Response
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: json
+	:emphasize-lines: 5,7
+
+	# Example get_channel() JSON response
+	{
+	  'error': 'Fatal Error'
+	  'message': 'get_channel: See the PyTwtich documentation for useage.'
+	  'status': 101
+	}
+
+Status Codes
+^^^^^^^^^^^^
+
+|  404 = Not Found
+|  401 = Unauthorized
+|  200 = OK
+|  101 = Fatal Error
+|  
 
 Contents
 --------

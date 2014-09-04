@@ -22,9 +22,12 @@ With the **get_tips()** function, you can retrieve tips (donations) with a **cli
 	|  **Do not place calls to these APIs on a publicly accessible website!**
 	|
 	|  Your **client_id and access_token** must remain confidential to ensure the security of your account. 
-	|  **An opt-in, publicly accessible solution with more limited data (personal info removed) will be coming
-	|  sometime in the future for those who need it.**
+	|  **An opt-in, publicly accessible solution with more limited data (personal info removed) will be coming**
+	|  **sometime in the future for those who need it.**
 	|  
+
+Example
+^^^^^^^
 
 .. code-block:: python
 	:emphasize-lines: 6,8
@@ -42,7 +45,11 @@ Arguments
 ^^^^^^^^^
 
 .. code-block:: python
-	:emphasize-lines: 2,5,8,11
+	:emphasize-lines: 2,3,6,9,12,15
+
+	# OAuth (required)
+	client_id=''
+	access_token=''
 
 	# The direction tips are returned. (**asc** or **desc**, default value is **asc**)
 	direction=''
