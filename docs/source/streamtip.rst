@@ -26,7 +26,8 @@ With the **get_tips()** function, you can retrieve tips (donations) with a **cli
 	|  sometime in the future for those who need it.**
 	|  
 
-::
+.. code-block:: python
+	:emphasize-lines: 6,8
 
 	import pytwitch # Import of PyTwitch.
 	import json # Only imported to pretty print retuned JSON string.
@@ -40,7 +41,9 @@ With the **get_tips()** function, you can retrieve tips (donations) with a **cli
 Arguments
 ^^^^^^^^^
 
-::
+.. code-block:: python
+	:emphasize-lines: 2,5,8,11
+
 	# The direction tips are returned. (**asc** or **desc**, default value is **asc**)
 	direction=''
 

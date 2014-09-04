@@ -45,7 +45,8 @@ JSON
 Install
 -------
 
-::
+.. code-block :: bash
+
 	$ pip install pytwitch
 
 .. note::
