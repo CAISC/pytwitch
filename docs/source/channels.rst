@@ -38,12 +38,13 @@ Arguments
 ^^^^^^^^^
 
 .. code-block:: python
-    :emphasize-lines: 2,5
+    :emphasize-lines: 3,6
 
-	# If you provide an oauth access token, it will get you the authorized channel object back.
+	# If you provide an oauth access token, 
+	# it will get you the authorized channel object back.
 	oauth=''
-
-	# If you provide a name. It will get you the public channel object back.
+  
+	# If you provide a name, it will get you the public channel object back.
 	name=''
 
 set_channel()
