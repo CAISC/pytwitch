@@ -13,7 +13,7 @@ setup(
     long_description=open('README.rst').read(),
     author=project['__author__'],
     author_email=project['__author_email__'],
-    url=project['__author_email__'],
+    url=project['__uri__'],
     keywords=project['__keywords__'],
     install_requires=project['__install_requires__'],
     packages=find_packages(),
