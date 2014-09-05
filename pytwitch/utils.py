@@ -19,3 +19,6 @@ class Utils():
 	def pretty_header(self, header):
 		if header:
 			return print(header+'\n'+'=' * len(header))
+
+	def convert_to_iso(self, arg):
+		return arg.isoformat()
