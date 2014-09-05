@@ -1,5 +1,5 @@
-PyTwitch Documentation |version_pypi|
-=====================================
+PyTwitch Documentation (|release|) |version_pypi|
+=================================================
 
 |  **PyTwitch** makes it easy to integrate the *Twitch API (v2)* into your own PyThon project.
 |  It also has the added bonus of being able to integrate with the **StreamTip API**.
@@ -13,15 +13,11 @@ PyTwitch Documentation |version_pypi|
 Python Support
 --------------
 
-|  As of now **PyTwitch** only supports |support|
+|  As of now **PyTwitch** only supports *(officially)* **Python 3.2>**.
 |  It **might** work on *prior versions* of **Python**, but not **guaranteed**.
 |  
 |  (There are plans to make **PyTwitch officially** work with **Python 2.7>** in the future.)
 |  
-
-.. |support| image:: https://pypip.in/py_versions/pytwitch/badge.png
-    :target: https://pypi.python.org/pypi/pytwitch
-    :alt: Supported Python versions
 
 Install
 -------
@@ -80,13 +76,6 @@ Contents
 
    channels
    streamtip
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
 .. |version_pypi| image:: https://pypip.in/version/pytwitch/badge.png
     :target: https://pypi.python.org/pypi/pytwitch

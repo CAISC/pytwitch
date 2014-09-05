@@ -1,5 +1,5 @@
 __name__             = 'pytwitch'
-__version__          = '0.0.6'
+__version__          = 'v0.0.6-alpha'
 __description__      = 'PyTwitch - Twitch Integration for Python'
 
 __author__           = 'Daniel Hyldebrandt Hemmingsen'
