@@ -14,7 +14,7 @@ class StreamTip():
 		# Default values, set every time you call the function
 		self.payload = {
 			'date_from': '2013-06-07T04:20:43.818Z',
-			'direction': 'asc',
+			'direction': 'desc',
 			'limit': 25,
 			'offset': 0,
 			'sort_by': 'date'
@@ -39,7 +39,7 @@ class StreamTip():
 			if 'top' in data['get']:
 				self.payload['sort_by'] = 'amount'
 			elif 'recent' in data['get']:
-				pass
+				self.payload['sort_by'] = 'date'
 			else:
 				return utils.error(error='Fatal Error', message='Only top and recent are valid shorthandler arguments', status=101)
 		else:
