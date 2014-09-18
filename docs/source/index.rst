@@ -1,5 +1,5 @@
-PyTwitch Documentation (|release|) |version_pypi|
-=================================================
+PyTwitch Documentation (|release|)
+==================================
 
 |  **PyTwitch** makes it easy to integrate the *Twitch API (v2)* into your own PyThon project.
 |  It also has the added bonus of being able to integrate with the **StreamTip API**.
@@ -17,6 +17,14 @@ Python Support
 |  It **might** work on *prior versions* of **Python**, but not **guaranteed**.
 |  
 |  (There are plans to make **PyTwitch officially** work with **Python 2.7>** in the future.)
+|  
+
+Twitch Authentication
+---------------------
+
+|  You can read more about **scopes** and how to obtain an **OAuth token** in the *Twitch API (v2) documentation*.
+|  Link to authentication documentation: https://github.com/justintv/Twitch-API/blob/master/authentication.md
+|  Direct link to scopes section: https://github.com/justintv/Twitch-API/blob/master/authentication.md#scope
 |  
 
 Install
@@ -37,31 +45,32 @@ Structure
 
 |  The structure used in this project, is heavily reflected on the actual *Twitch API (v2)* documentations.
 |  You can learn more about the *Twitch API (v2)* here: https://github.com/justintv/twitch-api
+|  This **may or may not** change over time, since some of the Twitch API (v2) is rather obnouxisly named.
 |  
 
 JSON Responses?
 ---------------
 
 |  All of the PyTwitch functions, even for error handling returns a JSON object right out of the box.
-|  It's planned that PyTwitch in the future will support more than just a JSON object to be returned.
+|  (It's planned that PyTwitch in the future will support more than just a JSON object to be returned.)
 |  
 
 Example Error Response
 ^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: json
-	:emphasize-lines: 5,7
 
 	# Example get_channel() JSON response
 	{
-	  'error': 'Fatal Error'
-	  'message': 'get_channel: See the PyTwtich documentation for useage.'
-	  'status': 101
+	  "error": "Fatal Error"
+	  "message": "get_channel: See the PyTwtich documentation for useage."
+	  "status": 101
 	}
 
 Status Codes
 ^^^^^^^^^^^^
 
+|  503 = Service Unavailable
 |  404 = Not Found
 |  401 = Unauthorized
 |  200 = OK
@@ -76,7 +85,3 @@ Contents
 
    channels
    streamtip
-
-.. |version_pypi| image:: https://pypip.in/version/pytwitch/badge.png
-    :target: https://pypi.python.org/pypi/pytwitch
-    :alt: Latest Version

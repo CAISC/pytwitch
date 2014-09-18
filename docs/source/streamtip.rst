@@ -1,7 +1,7 @@
 StreamTip
 =========
 
-|  Easily get you latest tips (donations) through the *StreamTip API*.
+|  Easily get your latest tips (donations) through the *StreamTip API*.
 |  You can learn more about the *StreamTip* API at (http://streamtip.com)
 |  (You **have** to be **logged in** to see the *API documentation*.)
 |  
@@ -30,35 +30,37 @@ Example
 ^^^^^^^
 
 .. code-block:: python
-	:emphasize-lines: 6,8
 
 	import pytwitch # Import of PyTwitch.
-	import json # Only imported to pretty print retuned JSON string.
 
-	# Getting 25 latest tips (default) sorted by date and in asc (ascending) order.
+	# Getting 25 latest tips (default) sorted by date and in desc (descending) order.
 	# If you only provide required client_id and access_token.
-	data = pytwitch.streamtip.get_tips(client_id='', access_token='')
-	# Pretty printing returned JSON object with json.dumps().
-	print(json.dumps(data, indent=4, sort_keys=True))
+	data = pytwitch.streamtip.get_tips(client_id="<client id>", access_token="<access token>")
+	# Pretty printing JSON for debugging purposes using utils.pretty_json
+	pytwitch.utils.pretty_json(data)
 
 Arguments
 ^^^^^^^^^
 
 .. code-block:: python
-	:emphasize-lines: 2,3,6,9,12,15
 
 	# OAuth (required)
-	client_id=''
-	access_token=''
+	client_id=""
+	access_token=""
+
+	# Shortcut argument, ommits all other arguments other than the required client_id and access_token
+	# top - Gets all time top tipper/donator
+	# recent - Gets the most recent tipper/donator
+	get=""
 
 	# The direction tips are returned. (**asc** or **desc**, default value is **asc**)
-	direction=''
+	direction=""
 
 	# The number of tips to be returned. (default value is **25**)
-	limit=''
+	limit=""
 
 	# The number of tips to skip. (default value is **0**)
-	offset=''
+	offset=""
 
 	# The field to sort tips by. (**amount** and **date** are supported, default value is **date**)
-	sort_by=''
+	sort_by=""

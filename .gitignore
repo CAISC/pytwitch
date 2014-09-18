@@ -2,7 +2,7 @@
 *.~
 
 # Tests
-test.py
+tests_run.py
 
 # Sublime Text 2
 *.sublime-project

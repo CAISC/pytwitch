@@ -11,6 +11,7 @@ setup(
     version=project['__version__'],
     description=project['__description__'],
     long_description=open('README.rst').read(),
+    docs_url=project['__docs_url__'],
     author=project['__author__'],
     author_email=project['__author_email__'],
     url=project['__uri__'],
