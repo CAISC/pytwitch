@@ -104,8 +104,6 @@ Example
 
 .. code-block :: python
 
-	:emphasize-lines: 5,7
-
 	import pytwitch # Import of PyTwitch.
 	import json # Only imported to pretty print retuned JSON string.
 
