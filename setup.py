@@ -14,7 +14,7 @@ setup(
     docs_url=project['__docs_url__'],
     author=project['__author__'],
     author_email=project['__author_email__'],
-    url=project['__uri__'],
+    url=project['__url__'],
     keywords=project['__keywords__'],
     install_requires=project['__install_requires__'],
     packages=find_packages(),
