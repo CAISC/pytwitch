@@ -105,7 +105,6 @@ Example
 .. code-block :: python
 
 	import pytwitch # Import of PyTwitch.
-	import json # Only imported to pretty print retuned JSON string.
 
 	# Get all the editors of channel with OAuth.
 	data = pytwitch.channels.get_editors(oauth="<ouath>")
