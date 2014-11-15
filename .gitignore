@@ -47,3 +47,6 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
+
+# Junk
+.DS_Store
